@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./assets/destination/background-destination-mobile.jpg");
+  background-position: center center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.dest-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  place-content: center;
+  place-items: center;
+  padding: 2rem;
+  
+}
+
+.dest-img-container {
+  /* display; */
+  /* border: green 1px solid; */
+  width: 250px;
+  padding-bottom: 15px;
+}
+
+.dest-img-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.dest-links {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.dest-links a {
+  margin: auto;
+  color: rgba(208, 214, 249, 1);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+.dest-links a:hover{
+     color: rgb(102, 159, 245);
+cursor: pointer;
+}
+#euro{
+    border-bottom: white 1px solid;
+    color: white;
+    padding-bottom: 7px;
+}
+.big-txt {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 4px;
+  font-weight: 900;
+  font-size: 60px;
+  text-align: center;
+}
+
+.small-txt {
+  color: rgba(208, 214, 249, 1);
+  text-align: center;
+  line-height: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: small;
+  letter-spacing: 1px;
+  border-bottom: rgb(114, 113, 113) 0.1px solid;
+  padding-bottom: 40px;
+}
+.avg-dist {
+  padding: 2rem;
+}
+.avg-heading-txt {
+  color: rgba(208, 214, 249, 1);
+  text-align: center;
+  line-height: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: small;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.avg-number {
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: small;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.num {
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px){
+body{
+  background-image: url('./assets/destination/background-destination-tablet.jpg');
+}
+
+  .container{
+    
+     padding-bottom: 20px;
+  }
+  .dest-links a{
+    font-size: 20px;
+  }
+  .big-txt{
+    padding-top: 20px;
+    font-size: 90px;
+  }
+  .small-txt{
+    font-size: 25px;
+  }
+  .avg-dist{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+  }
+}
+@media screen and (min-width: 1050px){
+  body{
+background-image: url('./assets/destination/background-destination-desktop.jpg');
+  }
+  .dest-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container{
+    display: block;
+    position: relative;
+    padding-top: 80px;
+  }
+  .container{
+  
+    width: 800px;
+  }
+  .nav-center{
+   padding-bottom: 0;
+  
+  }
+  .dest-links{
+     grid-template-columns: repeat(4, 0.1fr);
+  }
+  .dest-links a{
+    font-size: 20px;
+  }
+  .big-txt{
+    text-align: left;
+font-size: 60px;
+  }
+  .small-txt{
+    text-align: left;
+  }
+  .avg-dist{
+    place-items: start auto;
+  place-content: start;
+  justify-content: start;
+  
+  padding-left: 0;
+  }
+  .avg-heading-txt{
+    text-align: left;
+  }
+  .avg-number{
+    font-size: 25px;
+    text-align: left;
+  }
+  .dest-img-container{
+    width: 350px;
+  }
+}

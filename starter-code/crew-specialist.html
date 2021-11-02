@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Zen+Kurenaido&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="crewstyle.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+  <header>
+    <aside class="sidebar">
+
+      <div class="sidebar-header">
+        <img src="./assets/shared/logo.svg" class="side-logo" alt="">
+
+        <button class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="links">
+        <li>
+          <a href="index.html">00 home</a>
+        </li>
+        <li>
+          <a href="destination-europa.html">01 destination</a>
+        </li>
+        <li>
+          <a href="crew-commander.html">02 crew</a>
+        </li>
+        <li>
+          <a href="technology-capsule.html">03 Technology</a>
+        </li>
+      </ul>
+
+    </aside>
+    <nav>
+      <div class="nav-header">
+        <div class="nav-center">
+          <div class="tab-logo">
+            <img src="./assets/shared/logo.svg" class="logo" alt="">
+          </div>
+<ul class="tab-links">
+  <li>
+    <a href="index.html"> home</a>
+  </li>
+  <li>
+    <a href="destination-europa.html">destination</a>
+  </li>
+  <li>
+    <a id="curr-link"  href="crew-commander.html"> crew</a>
+  </li>
+  <li>
+    <a href="technology-capsule.html">Technology</a>
+  </li>
+</ul>
+          <button class="nav-toggle btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+
+      </div>
+
+    </nav>
+
+
+  </header>
+  <div class="crew-desk">
+    <main>
+        <div class="crew-text">
+          <h3>
+            <span id="number">02</span> Meet your crew
+          </h3>
+        </div>
+      <div class="crew-image-container">
+      
+        <!-- article -->
+        <article class="review">
+    
+          <div class="crew-image">
+            <img src="./assets/crew/image-mark-shuttleworth.webp" alt="">
+          </div>
+          <div class="btns">
+            <button class="next-btn">
+              <a href="crew-commander.html"><i class="fas fa-circle"></i></a>
+    
+            </button>
+            <button class="next-btn">
+              <a id="curr-btn" href="crew-specialist.html">
+                <i class="fas fa-circle">
+                </i>
+              </a>
+    
+            </button>
+            <button class="next-btn">
+              <a href="crew-pilot.html">
+                <i class="fas fa-circle"></i>
+              </a>
+    
+            </button>
+            <button class="next-btn">
+              <a href="crew-engineer.html">
+                <i class="fas fa-circle"></i>
+              </a>
+    
+            </button>
+          </div>
+          <p id="position"> Mission Specialist</p>
+          <p id="name">Mark Shuttleworth</p>
+          <p id="text">
+            Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
+            the Linux-based Ubuntu operating system. Shuttleworth became the first South
+            African to travel to space as a space tourist.
+          </p>
+          <div class="tab-btns">
+            <button class="next-btn">
+              <a href="crew-commander.html"><i class="fas fa-circle"></i></a>
+    
+            </button>
+            <button class="next-btn">
+              <a id="curr-btn" href="crew-specialist.html">
+                <i class="fas fa-circle">
+                </i>
+              </a>
+    
+            </button>
+            <button class="next-btn">
+              <a href="crew-pilot.html">
+                <i class="fas fa-circle"></i>
+              </a>
+    
+            </button>
+            <button class="next-btn">
+              <a href="crew-engineer.html">
+                <i class="fas fa-circle"></i>
+              </a>
+    
+            </button>
+          </div>
+        </article>
+        <!-- end of article -->
+    
+      </div>
+    </main>
+    <div class="crew-image-tab">
+      <img src="./assets/crew/image-mark-shuttleworth.webp" alt="">
+    </div>
+  </div>
+
+
+  <script src="crew.js"></script>
+</body>
+
+</html>
