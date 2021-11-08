@@ -26,7 +26,7 @@ const profileIt = [
     postedAt: "1d ago",
     contract: "Part Time",
     location: "Remote",
-    languages: ["Python", false],
+    languages: ["Python",false,],
     tools: ["React"]
   },
   {
@@ -162,9 +162,16 @@ function featureItem(profileIt){
     let itemFeature = "" 
     if (profileIt.featured) 
 itemFeature += `<button class="featured">featured</button>`
-return itemFeature
-        
-    
+return itemFeature 
+}
+
+const filterBtn = document.querySelector(".filter-btn")
+
+function languageItem(profileIt){
+    let itemLanguage = true
+    if (profileIt.languages[1]) 
+itemLanguage += filterBtn.style.display = "hidden"
+return itemLanguage
 }
 
 
@@ -207,7 +214,15 @@ function displayProfileItems(profileItems) {
     <button class="filter-btn" type="button" data-id="">
       ${item.level}
     </button>
-    
+    <button class="filter-btn" type="button" data-id="">
+      ${item.languages[0]}
+    </button>
+     ${languageItem(item)}
+     <button class="filter-btn" type="button" data-id="">
+      ${item.languages[2]}
+    </button>
+
+
 
 
   
